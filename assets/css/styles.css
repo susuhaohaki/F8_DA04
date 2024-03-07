@@ -111,6 +111,8 @@ button {
 
 .hero__media {
     display: flex;
+    position: relative;
+    padding-bottom: 94px;
 }
 
 .hero__inner {
@@ -162,4 +164,61 @@ button {
     background: #faa7ad;
 }
 
-.hero__img-small {}
+.hero__list {
+    position: absolute;
+    left: 129px;
+    bottom: 0px;
+    width: 250px;
+    height: 156px;
+    padding: 18px 14px;
+    border-radius: 10px;
+    background: #FFF;
+    box-shadow: -17px 14px 68px -4px rgba(207, 174, 132, 0.25);
+}
+
+.hero__list-item {
+    display: flex;
+}
+
+.hero__list-item:nth-of-type(2) .hero__list-item__thumb {
+    background: #C6E2FA;
+}
+
+.hero__list-item__thumb {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    object-fit: cover;
+    background: #FEC23F;
+}
+
+.hero_list-item__info {
+    margin-left: 10px;
+}
+
+.hero__list-item__title {
+    color: #181E52;
+    font-family: Sora;
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 1;
+    /* 100% */
+}
+
+.hero__list-item__skeleton {
+    margin-top: 6px;
+    width: var(--width, 118px);
+    height: 4px;
+    border-radius: 10px;
+    opacity: 0.08;
+    background: #000958;
+}
+
+.hero-list-item__separate {
+    display: block;
+    width: 100%;
+    height: 2px;
+    margin: 20px 0;
+    background: #f2f2f2;
+    border-radius: 99px;
+}
