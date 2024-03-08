@@ -64,9 +64,7 @@ button {
 }
 
 .btn:hover {
-    background-color: var(--color_btn);
-    --color_font: #fff;
-    transition: background-color 200ms, color 200ms;
+    opacity: 0.8;
 
 }
 
@@ -85,6 +83,24 @@ button {
     height: 20px;
     border-radius: 50%;
     background: #FFF;
+    box-shadow: 4px 3px 10px -1px rgba(191, 41, 0, 0.40);
+}
+
+.section-heading {
+    color: #000958;
+    font-family: Sora, sans-serif;
+    font-size: 5.2rem;
+    font-weight: 700;
+    line-height: 1.19;
+    /* 119.231% */
+}
+
+.section__desc {
+    margin-top: 24px;
+    font-size: 1.6rem;
+    line-height: 1.8;
+    color: #656689;
+
 }
 
 /* ----------Header---------- */
@@ -289,4 +305,70 @@ button {
     line-height: 1;
     text-decoration: underline;
 
+}
+
+/* ----------About---------- */
+.about {
+    padding-top: 100px;
+    margin-top: 107px;
+}
+
+.about__inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.about__label {
+    color: #5E6085;
+    font-family: Sora, sans-serif;
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 1;
+    /* 100% */
+}
+
+.about__heading {
+    margin-top: 15px;
+}
+
+.about__desc,
+.about__heading {
+    width: 444px;
+}
+
+.about__checklist {
+    margin-top: 54px;
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: flex-start;
+    gap: 36px;
+}
+
+.about__check-item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    color: #48496A;
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 1;
+    /* 100% */
+}
+
+.about__check-item::before {
+    display: inline-block;
+    content: " ";
+    width: 24px;
+    height: 24px;
+    background: #ff5d31;
+    box-shadow: 0px 4px 16px -3px rgba(255, 93, 49, 0.69);
+    border-radius: 4px;
+}
+
+.about__check-item::after {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    content: url(../icon/check.svg);
 }
