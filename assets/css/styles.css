@@ -309,13 +309,18 @@ button {
 
 /* ----------About---------- */
 .about {
-    padding-top: 100px;
-    margin-top: 107px;
+    margin-top: 138px;
 }
 
 .about__inner {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+.about__media {
+    position: relative;
+
 }
 
 .about__label {
@@ -368,7 +373,73 @@ button {
 
 .about__check-item::after {
     position: absolute;
-    top: 5px;
+    top: 2px;
     left: 5px;
     content: url(../icon/check.svg);
+}
+
+.about__card {
+    position: absolute;
+    top: 165px;
+    left: 0;
+    width: 136px;
+    text-align: center;
+    padding: 30px 26px;
+    border-radius: 10px;
+    background: #5BD6E2;
+    box-shadow: -15px 26px 48px 0px rgba(85, 240, 255, 0.17);
+}
+
+.about__card-title {
+    color: #FFF;
+    font-family: Sora, sans-serif;
+    font-size: 4.2rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1;
+    /* 100% */
+}
+
+.about__card-desc {
+    margin-top: 14px;
+    color: #C6F4F9;
+    font-size: 1.4rem;
+    line-height: 1.42;
+    /* 142.857% */
+}
+
+.about__card-decor {
+    position: absolute;
+    top: -39px;
+    left: 85px;
+}
+
+.about__img-wrapper {
+    position: relative;
+    width: 494px;
+    margin-left: auto;
+}
+
+.about__img-wrapper::after {
+    position: absolute;
+    inset: auto 0 0 0;
+    height: 336px;
+    content: "";
+    border-radius: 16px;
+    background: linear-gradient(180deg, #FCE0EF 0%, #FAC3D1 100%);
+    box-shadow: 11px 18px 65px 0px rgba(255, 155, 121, 0.12);
+    z-index: -1;
+}
+
+.about__img {
+    width: 450px;
+    display: block;
+    margin: 0 auto;
+}
+
+.about__media-decor {
+    position: absolute;
+    top: 157px;
+    right: -50px;
+    z-index: -1;
 }
