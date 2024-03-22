@@ -95,7 +95,7 @@ button {
     /* 119.231% */
 }
 
-.section__desc {
+.section-desc {
     margin-top: 24px;
     font-size: 1.6rem;
     line-height: 1.8;
@@ -505,4 +505,97 @@ button {
 .about__decor-img:nth-child(8) {
     right: -42px;
     bottom: -55px;
+}
+
+.about__desc-bottom {
+    width: 511px;
+    margin-bottom: 50px;
+}
+
+.tab__list {
+    position: relative;
+    display: flex;
+    column-gap: 56px;
+
+}
+
+.tab__list::after,
+.tab__item--active::after,
+.tab__content-more::after {
+    position: absolute;
+    content: " ";
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 2px;
+    border-radius: 1px;
+    background: #FF5B2E;
+    opacity: 0.07;
+}
+
+.tab__item--active::after {
+    width: 95px;
+    opacity: 1;
+
+}
+
+.tab__item {
+    padding-bottom: 14px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    column-gap: 12px;
+    cursor: pointer;
+}
+
+.tab__icon {
+    width: 20px;
+}
+
+.tab__title {
+    color: #48496A;
+    font-family: Sora, sans-serif;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1;
+}
+
+.tab__contents {
+    margin-top: 36px;
+}
+
+.tab__content-item {
+    display: none;
+}
+
+.tab__content-item--active {
+    display: block;
+}
+
+.tab__content-desc {
+    width: 391px;
+    color: #656689;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.71;
+    /* 171.429% */
+}
+
+.tab__content-more {
+    position: relative;
+    display: inline-block;
+    margin-top: 32px;
+    color: #FF5D31;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 16px;
+    padding-bottom: 5px;
+    /* 100% */
+}
+
+.tab__content-more::after {
+    opacity: 1;
+    height: 1.5px;
 }
